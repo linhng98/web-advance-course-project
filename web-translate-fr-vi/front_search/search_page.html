@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>search</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" crossorigin="anonymous"
+    defer></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" crossorigin="anonymous"
+    defer></script>
+  <script src="search_page.js" defer></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <br /> <br />
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 col-lg-8">
+        <div class="card-body row no-gutters align-items-center">
+          <div class="col-auto mr-4">
+            <i class="fas fa-search h4 text-body"></i>
+            <div class="dropdown d-inline-block">
+              <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">en-vi</button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" onclick="changeDropdownMenuText(this.innerHTML)">en-vi</a>
+                <a class="dropdown-item" onclick="changeDropdownMenuText(this.innerHTML)">fr-en</a>
+                <a class="dropdown-item" onclick="changeDropdownMenuText(this.innerHTML)">fr-vi</a>
+              </div>
+            </div>
+          </div>
+          <!--end of col-->
+          <div class="col">
+            <input id="searchBar" class="form-control form-control-borderless" type="search" placeholder="Search...">
+            <input id="resultBar" class="form-control form-control-borderless mt-3" type="text" readonly>
+          </div>
+          <!--end of col-->
+          <div class="col-auto ml-4 ">
+            <button class="btn btn-lg btn-success" onclick="searchWord()">Search</button>
+          </div>
+          <!--end of col-->
+        </div>
+      </div>
+      <!--end of col-->
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>
